@@ -1,2 +1,29 @@
+.main {
+  background-color: #62e073;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
 
-   
+.main__profile-picture {
+  padding-top: 2rem;
+}
+
+.main__name {
+  padding-top: 1em;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.main__role {
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.main__social-links img {
+  margin: 0%;
+  height: 3rem;
+  border-radius: 1rem;
+}
+/*# sourceMappingURL=profile.css.map */

@@ -1,6 +1,44 @@
-@each $member in a,b,c,d{
-    .#{$member}{
-        background-image: url("/image/#{$member}.jpg");
-    }
+$colors:(
+    main-background: rgb(98, 224, 115),
+    main-text: white
+ );
+
+@function color($color-name){
+    @return map-get($colors,$color-name)
+}
+
+
+.main{
+    background-color: color(main-background); 
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+.main__profile-picture{
+    padding-top: 2rem;//todo: only apply if mediaquery is large
+}
+
+.main__name{
     
+    padding-top: 1em;//todo: only apply if mediaquery is large
+    color: color(main-text);
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.main__role{
+    color: color(main-text);
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+.main__social-links{
+  
+    img{    
+            margin: 0%;
+            height: 3rem;
+            border-radius: 1rem;
+    }
+
 }
