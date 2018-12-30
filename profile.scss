@@ -1,0 +1,6 @@
+@each $member in a,b,c,d{
+    .#{$member}{
+        background-image: url("/image/#{$member}.jpg");
+    }
+    
+}
