@@ -5,6 +5,7 @@
 	<meta name="description" content="Leon's Personal Page" />
 	<meta name="author" content="Weidong Li / Leon" />
 
+	<link rel="stylesheet" href="./profile.css">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -17,79 +18,60 @@
 
 
 </head>
-<body>
 
+
+<body >
+<div id="nav-placeholder">
+
+</div>
 <!-- need to have new pages-->	
-<nav class="navbar navbar-expand-lg navbar-light bg-light navMenu">
-	<a class="navbar-brand" href="#">Weidong Li(Leon)</a>
- 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  	 	 <span class="navbar-toggler-icon"></span>
- 	</button>
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Resume</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Services</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Blog</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
-			</li>
-			
-		</ul>
+
+<div class="main container" >
 		
-	</div>
-</nav>
-
-<div class="main container ">
 <!--need css to make side margin-->
 	<div class="row">
-		<div class="col-5">
+		<div class="col-md-5 d-flex justify-content-center">
 			<div class="main__profile-picture">
-				<img src="https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/23319391_1522870987789237_4385238817524005318_n.jpg?_nc_cat=105&_nc_ht=scontent.fsyd4-1.fna&oh=9ca19790b1467931037a9397b2f9818b&oe=5CAB5B3E">
+				<img class="img-fluid " src="https://scontent.fsyd4-1.fna.fbcdn.net/v/t1.0-9/23319391_1522870987789237_4385238817524005318_n.jpg?_nc_cat=105&_nc_ht=scontent.fsyd4-1.fna&oh=9ca19790b1467931037a9397b2f9818b&oe=5CAB5B3E">
 			</div>
 		</div>
-		<div class="col-7">
-			<div class="main__name">
-				<h1>Weidong Li (Leon)<h1>
-			</div>
+
+		<div class="col-md-7">
+			
+			<h1 class="main__name">Weidong Li (Leon)<h1>
+			
 			<div class="main__role">
-					Frontend-developer
+					Web developer
 			</div>
 
-			<div class="main__social-links">		
-				<a href="www.linkedin.com/in/weidong-li-leon" alt="linkedin"> 
-					<img src="https://image.flaticon.com/icons/png/128/174/174855.png"> 
+			<div class="main__social-links d-flex justify-content-center">		
+				<a   href="https://linkedin.com/in/weidong-li-leon" alt="linkedin"> 
+					<img src="https://cdn4.iconfinder.com/data/icons/social-media-2097/94/linkedin-128.png">
 				</a>
-				<a href="https://www.facebook.com/leon.li.16" alt="facebook"> 
+				
+				<a  href="https://www.facebook.com/leon.li.16" alt="facebook"> 
 					<img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/3-128.png">
 				</a>
-				<a href="https://www.instagram.com/leonlidawn/" alt="instgram"> 
-					<img src="https://cdn4.iconfinder.com/data/icons/social-media-2097/94/linkedin-128.png">
+				
+				<a  href="https://www.instagram.com/leonlidawn/" alt="instgram"> 
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA-YNYrAsy2tqgEizerHqoFEZJywTRGt3mf5th38WbaCe5c-yMRA"> 
 				</a>
 			</div>	
 
-			<div class="main__work">
-				Developed projects:
-				<a href="www.themathsinstitute.com.au" alt="website"> The Maths Institute </a>
-			</div>
+		
 
 		</div>
 	</div>
+
+</div>
+<div class="info container ">
 
 	<div class="row">
 		<div class="col-5">  
 			<h2>About Me</h2>
 			<p>Hi there! I am Leon. Bachelor graduate in Computer Science from University of 
-				New South Wales Sydney, with basic knowledge of Java, C, Haskell, Python, Perl,
+				New South Wales Sydney, with knowledge of Java, C, Haskell, Python, Perl,
 				 Prolog, HTML, CSS, Vue.js 4. Node.js, MySQL and REST api. Have experience 
 				 in web development and agile programing.  </p>
 		</div>
@@ -97,6 +79,7 @@
 		<div class="col-7">  
 
 			<table>
+
 				<tr>
 					<td>Age:</td>
 					<td>26</td>
@@ -117,6 +100,14 @@
 					<td>Mobile:</td>
 					<td>+61 481555767</td>
 				</tr> 
+
+				<tr>
+					<td>Developed projects:</td>
+					<td>
+						<a href="http://www.themathsinstitute.com.au" alt="website"> The Maths Institute </a>
+					</td>
+				</tr>
+
 			</table>
 		</div>
 
@@ -126,4 +117,23 @@
 </div>
 
 </body>
+
+<footer >
+		<div id="footer-placeholder">
+
+		</div>
+</footer>
+	
+
+<script>
+
+		$(function(){
+			
+		  $("#nav-placeholder").load("primary-menu.html");
+		  $("#footer-placeholder").load("footer.html");
+
+		});
+		
+</script>
+
 </html>
